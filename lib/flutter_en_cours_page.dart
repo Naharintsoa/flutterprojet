@@ -25,10 +25,23 @@ class _FlutterenCoursState extends State<FlutterenCours> {
         children: [
           Image.asset(
             'images/Nahary.jpg',
-            height: 300,
-            width: 500,
-            colorBlendMode: BlendMode.darken,
-          )
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          const Divider(
+            color: Colors.blueGrey,
+          ),
+          Container(
+            color: Colors.lightBlue,
+            child: const Text(
+              'ANDRIANARIVONY Naharintsoa Paré',
+              style: TextStyle(
+                fontSize: 40,
+                color: Color.fromARGB(255, 238, 203, 47),
+              ),
+            ),
+          ),
         ],
       ),
     );

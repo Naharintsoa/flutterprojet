@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: NavigationBar(
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: 'home'),
-            NavigationDestination(icon: Icon(Icons.person), label: 'person'),
+            NavigationDestination(icon: Icon(Icons.person), label: 'à propos'),
           ],
         ),
       ),
