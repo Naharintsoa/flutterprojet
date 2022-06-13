@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home_page.dart';
+import 'package:flutter_application_1/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,5 +30,21 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class RootPage extends StatefulWidget {
+  RootPage({Key? key}) : super(key: key);
+
+  @override
+  State<RootPage> createState() => _RootPageState();
+}
+
+class _RootPageState extends State<RootPage> {
+  int currentPage = 0;
+  List<Widget> pages = const [ProfilePage()];
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
